@@ -406,17 +406,15 @@ if [ $? != 0 -o -z "$(ls bin)" ]; then
 fi;
 
 ui_print "===========================================";
-ui_print "=      _  __                      _      =";
-ui_print "=     | |/ /_ __ __ _ _ __  _   _| |     =";
-ui_print "=     | ' /| '__/ _` | '_ \| | | | |     =";
-ui_print "=     | . \| | | (_| | | | | |_| | |     =";
-ui_print "=     |_|\_\_|  \__,_|_| |_|\__,_|_|     =";
+ui_print "=      _  __                      _       =";
+ui_print "=     | |/ /_ __ __ _ _ __  _   _| |      =";
+ui_print "=     |   /|  __/ _  |  _ \| | | | |      =";
+ui_print "=     | . \| | | (_| | | | | |_| | |      =";
+ui_print "=     |_|\_\_|  \__,_|_| |_|\__,_|_|      =";
 ui_print "===========================================";
-ui_print "===========================================";
-ui_print "= Kernel version  : 4.9                 =";
-ui_print "= Supoort Android : All Version         =";
-ui_print "= Device          : Redmi 5 (rosy)      =";
-ui_print "= Maintaiter      : Naupal	          =";
+ui_print "=  Kernel version  : 4.9                  =";
+ui_print "=  Device          : Redmi 5 (rosy)       =";
+ui_print "=  Maintainer      : Naupal	            =";
 ui_print "===========================================";
 
 setup_env;
