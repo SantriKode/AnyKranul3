@@ -75,10 +75,11 @@ on boot
 
 on property:sys.boot_completed=1
     # KCAL Display <!-- cool amoled -->
-    write /sys/devices/platform/kcal_ctrl.0/kcal_cont 258
+    write /sys/devices/platform/kcal_ctrl.0/kcal_cont 262
     write /sys/devices/platform/kcal_ctrl.0/kcal_min 35
-    write /sys/devices/platform/kcal_ctrl.0/kcal_sat 275
-    write /sys/devices/platform/kcal_ctrl.0/kcal_val 251
+    write /sys/devices/platform/kcal_ctrl.0/kcal_hue 0
+    write /sys/devices/platform/kcal_ctrl.0/kcal_sat 272
+    write /sys/devices/platform/kcal_ctrl.0/kcal_val 256
     write /sys/devices/platform/kcal_ctrl.0/kcal_enable 1
     
     # USB Fastcharge
