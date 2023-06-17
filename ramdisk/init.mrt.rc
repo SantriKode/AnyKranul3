@@ -30,6 +30,20 @@
 # NFS Project
 
 on boot
+    # Test Permission
+    chown system system /dev/cpuctl/nnapi-hal/cpu.uclamp.min
+    chown system system /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive
+    # /config/usb_gadget/g1/functions/rndis.rndis/class
+    # /config/usb_gadget/g1/functions/rndis.rndis/subclass
+    # /config/usb_gadget/g1/functions/rndis.rndis/protocol
+    # /dev/sys/fs/by-name/userdata/seq_file_ra_mul
+    chmod 0664 /dev/cpuctl/nnapi-hal/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive
+    chmod 0660 /config/usb_gadget/g1/functions/rndis.rndis/class
+    chmod 0660 /config/usb_gadget/g1/functions/rndis.rndis/subclass
+    chmod 0660 /config/usb_gadget/g1/functions/rndis.rndis/protocol
+    chmod 0755 /dev/sys/fs/by-name/userdata/seq_file_ra_mul
+
     # KCAL permissions
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
